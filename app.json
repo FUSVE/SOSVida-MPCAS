@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "respiro-seguro",
+    "slug": "respiro-seguro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo_transparente.png",
+      // "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "resizeMode:": "cover",
+      "justifyContent": "center",
+      "width": 500,
+      "height": 500,
+      "flexDirection": "column",
+      "alignItems": "center"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo_transparente.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo_transparente.png"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/RubikMicrobe-Regular.ttf"]
+        }
+      ]
+    ]
+  }
+}
