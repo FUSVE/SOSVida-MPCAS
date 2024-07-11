@@ -18,7 +18,7 @@ export default function Home({ navigation }) {
     <View style={style.header}>
       <ImageBackground source={uri} style={style.image}>
         <Text style={style.text}>Bem vindo!</Text>
-        <Text style={style.text}>SOS vida</Text>
+        <Text style={style.text}>SOS Vida</Text>
         <Button
           style={style.botao}
           buttonColor="#fbc02d"
