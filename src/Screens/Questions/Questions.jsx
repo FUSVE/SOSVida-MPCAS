@@ -196,7 +196,7 @@ export default function Questions({ navigation, route }) {
                 </Button>
               </View>
               <Dialog visible={visible} onDismiss={hideDialog}>
-                <Dialog.Title>Anteção</Dialog.Title>
+                <Dialog.Title>Atenção</Dialog.Title>
                 <Dialog.Content>
                   <Text variant="bodyMedium">
                     Falta responder alguma(s) perguntas!

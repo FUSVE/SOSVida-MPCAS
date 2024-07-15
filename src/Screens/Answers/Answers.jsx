@@ -32,7 +32,7 @@ export default function Answers({ navigation, route }) {
   };
 
   useEffect(() => {
-    if (userType == USER_TYPE_ENUM.USER_COMUM && answer >= 11) showDialog();
+    if ( answer >= 11) showDialog();
   }, []);
 
   return (
@@ -86,23 +86,24 @@ export default function Answers({ navigation, route }) {
                 )}
 
                 <View style={style.button}>
-                  <Button
+                  {/* <Button
                     style={{ marginEnd: 10 }}
                     buttonColor="#fbc02d"
                     mode="contained"
                     onPress={() => ligar()}
                   >
                     Ligar para o CVV
-                  </Button>
-                  <Button
+                  </Button> */}
+
+                  {/* <Button
                     buttonColor="#fbc02d"
                     mode="contained"
                     rippleColor="white"
                     onPress={() => navigation.navigate("Home")}
                   >
                     Finalizar
-                  </Button>
-                  {/* {answer >= 6 && (
+                  </Button> */}
+                  {answer >= 6 && (
                     <Button
                       style={{ marginStart: 5 }}
                       buttonColor="#fbc02d"
@@ -112,13 +113,13 @@ export default function Answers({ navigation, route }) {
                     >
                       Avançar
                     </Button>
-                  )} */}
+                  )}
                 </View>
               </View>
             </PaperProvider>
           </ScrollView>
         </SafeAreaView>
-        <Dialog visible={visible} onDismiss={hideDialog}>
+        {/* <Dialog visible={visible} onDismiss={hideDialog}>
           <Dialog.Title>Atenção</Dialog.Title>
           <Dialog.Content>
             <Text variant="bodyMedium">
@@ -128,7 +129,7 @@ export default function Answers({ navigation, route }) {
           <Dialog.Actions>
             <Button onPress={ligar}>Ok</Button>
           </Dialog.Actions>
-        </Dialog>
+        </Dialog> */}
       </ImageBackground>
     </>
   );
