@@ -208,7 +208,7 @@ export default function Answers({ navigation, route }) {
       );
     }
 
-    if (userType ==! USER_TYPE_ENUM.USER_COMUM && answer > 9) {
+    if ( answer > 9) {
       return (
         <View style={style.button}>
           <Button
