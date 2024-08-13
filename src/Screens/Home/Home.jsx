@@ -39,7 +39,7 @@ export default function Home({ navigation }) {
             navigation.navigate("Questions");
           }}
         >
-          Profissional Prescritor
+          Prescritor
         </Button>
         <Button
           style={style.botaoNaoPrescritor}
@@ -50,7 +50,7 @@ export default function Home({ navigation }) {
             navigation.navigate("Questions");
           }}
         >
-          Profiss. Não Prescritor
+          Não Prescritor
         </Button>
       </ImageBackground>
     </View>
