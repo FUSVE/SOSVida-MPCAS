@@ -1,0 +1,18 @@
+{
+  "cli": {
+    "version": ">= 9.0.3"
+  },
+  "build": {
+    "production": {
+      "distribution": "store",
+      "android": {
+        "buildType": "app-bundle",
+        "releaseChannel": "production"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
+
