@@ -31,6 +31,7 @@ const style = StyleSheet.create({
     fontSize: 25,
     textAlign: "center",
     fontWeight: "bold",
+    color: "black"
   },
   surface: {
     padding: 25,

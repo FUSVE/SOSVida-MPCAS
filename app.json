@@ -17,7 +17,9 @@
       "flexDirection": "column",
       "alignItems": "center"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -25,7 +27,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo_transparente.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.delsantx.sosvida"
     },
     "web": {
       "favicon": "./assets/logo_transparente.png"
@@ -34,9 +37,16 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/RubikMicrobe-Regular.ttf"]
+          "fonts": [
+            "./assets/fonts/RubikMicrobe-Regular.ttf"
+          ]
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "80f4f7c6-ac33-4130-8338-2499cffff636"
+      }
+    }
   }
 }

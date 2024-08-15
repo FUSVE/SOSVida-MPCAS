@@ -32,8 +32,215 @@ export default function Answers({ navigation, route }) {
   };
 
   useEffect(() => {
-    if (userType == USER_TYPE_ENUM.USER_COMUM && answer >= 11) showDialog();
+    if (answer >= 11) showDialog();
   }, []);
+
+  const renderMessage = () => {
+    if (userType === USER_TYPE_ENUM.USER_COMUM) {
+      if (answer <= 9) {
+        return (
+          <Card style={style.card}>
+            <Card.Content>
+              <Card.Title title="Recomendações" />
+              <Text style={style.cardText}>
+                Atividade física supervisionada
+              </Text>
+              <Text style={style.cardText}>
+                Praticar auto cuidado, como meditação e ioga
+              </Text>
+              <Text style={style.cardText}>Alimentação saudável</Text>
+              <Text style={style.cardText}>
+                Conviver com pessoas que lhe transmitam paz e felicidade
+              </Text>
+              <Text style={style.cardText}>Contato com a natureza</Text>
+              <Text style={style.cardText}>
+                Se necessário, realizar psicoterapia
+              </Text>
+            </Card.Content>
+          </Card>
+        );
+      } else {
+        return (
+          <Text style={style.cardText}>
+            Procurar por auxílio de equipe de saúde mental (psiquiatra/psicólogo) o mais breve possível
+          </Text>
+        );
+      }
+    }
+
+    if (userType === USER_TYPE_ENUM.USER_NAO_PRESCRITOR) {
+      if (answer <= 9) {
+        return (
+          <Card style={style.card}>
+            <Card.Content>
+              <Card.Title title="Recomendações" />
+              <Text style={style.cardText}>
+                Atividade física supervisionada
+              </Text>
+              <Text style={style.cardText}>
+                Praticar auto cuidado, como meditação e ioga
+              </Text>
+              <Text style={style.cardText}>Alimentação saudável</Text>
+              <Text style={style.cardText}>
+                Conviver com pessoas que lhe transmitam paz e felicidade
+              </Text>
+              <Text style={style.cardText}>Contato com a natureza</Text>
+              <Text style={style.cardText}>
+                Se necessário, realizar psicoterapia
+              </Text>
+            </Card.Content>
+          </Card>
+        );
+      } else {
+        return (
+          <Card style={style.card}>
+            <Card.Content>
+              <Card.Title title="Recomendações" />
+              <Text style={style.cardText}>
+                Atividade física supervisionada
+              </Text>
+              <Text style={style.cardText}>
+                Praticar autocuidado, como ioga e meditação
+              </Text>
+              <Text style={style.cardText}>
+                Psicoterapia, terapia cognitivo comportamental
+              </Text>
+              <Text style={style.cardText}>
+                Reduzir acesso a meios letais, como armas de fogo, armas brancas, medicamentos
+              </Text>
+              <Text style={style.cardText}>
+                Recorrer a rede de suporte, como familiares e amigos para suporte emocional
+              </Text>
+              <Text style={style.cardText}>
+                Garantir acesso rápido a serviços de crise como CVV (188)
+              </Text>
+              <Text style={style.cardText}>
+                Buscar atendimento em unidade de saúde de forma imediata
+              </Text>
+              <Text style={style.cardText}>
+                Notificação à equipe de saúde mental
+              </Text>
+            </Card.Content>
+          </Card>
+        );
+      }
+    }
+
+    if (userType === USER_TYPE_ENUM.USER_PRESCRITOR) {
+      if (answer <= 9) {
+        return (
+          <Card style={style.card}>
+            <Card.Content>
+              <Card.Title title="Recomendações" />
+              <Text style={style.cardText}>
+                Atividade física supervisionada
+              </Text>
+              <Text style={style.cardText}>
+                Praticar auto cuidado, como meditação e ioga
+              </Text>
+              <Text style={style.cardText}>Alimentação saudável</Text>
+              <Text style={style.cardText}>
+                Conviver com pessoas que lhe transmitam paz e felicidade
+              </Text>
+              <Text style={style.cardText}>Contato com a natureza</Text>
+              <Text style={style.cardText}>
+                Se necessário, realizar psicoterapia
+              </Text>
+            </Card.Content>
+          </Card>
+        );
+      } else {
+        return (
+          <Card style={style.card}>
+            <Card.Content>
+              <Card.Title title="Recomendações" />
+              <Text style={style.cardText}>
+                Atividade física supervisionada
+              </Text>
+              <Text style={style.cardText}>
+                Praticar autocuidado como ioga e meditação
+              </Text>
+              <Text style={style.cardText}>
+                Recomendar psicoterapia, terapia cognitivo comportamental e interpessoal
+              </Text>
+              <Text style={style.cardText}>
+                Reduzir acesso a meios letais como armas de fogo, armas brancas, medicamentos
+              </Text>
+              <Text style={style.cardText}>
+                Recorrer a rede de suporte, como familiares e amigos para suporte emocional
+              </Text>
+              <Text style={style.cardText}>
+                Iniciar medicação antidepressiva, baseada nas especificidades e características de cada paciente
+              </Text>
+              <Text style={style.cardText}>
+                Em caso de rede de apoio frágil ou inexistente, baixo suporte social, avaliar necessidade de internação hospitalar
+              </Text>
+            </Card.Content>
+          </Card>
+        );
+      }
+    }
+
+    return null;
+  };
+
+  const renderButtons = () => {
+    if (userType === USER_TYPE_ENUM.USER_COMUM && answer <= 9) {
+      return (
+        <View style={style.button}>
+          <Button
+            style={{ marginEnd: 10 }}
+            buttonColor="#fbc02d"
+            mode="contained"
+            onPress={() => ligar()}
+          >
+            Ligar para o CVV
+          </Button>
+          <Button
+            buttonColor="#fbc02d"
+            mode="contained"
+            rippleColor="white"
+            onPress={() => navigation.navigate("Home")}
+          >
+            Finalizar
+          </Button>
+        </View>
+      );
+    }
+
+    if ( answer > 9) {
+      return (
+        <View style={style.button}>
+          <Button
+            style={{ marginStart: 5 }}
+            buttonColor="#fbc02d"
+            rippleColor="white"
+            mode="contained"
+            onPress={() => navigation.navigate("PartOne")}
+          >
+            Avançar
+          </Button>
+        </View>
+      );
+    }
+
+    if (answer <= 9) {
+      return (
+        <View style={style.button}>
+          <Button
+            buttonColor="#fbc02d"
+            mode="contained"
+            rippleColor="white"
+            onPress={() => navigation.navigate("Home")}
+          >
+            Finalizar
+          </Button>
+        </View>
+      );
+    }
+
+    return null;
+  };
 
   return (
     <>
@@ -57,63 +264,8 @@ export default function Answers({ navigation, route }) {
                   label={answer}
                   style={style.avatar}
                 />
-                {answer <= 10 && (
-                  <View>
-                    <Card style={style.card}>
-                      <Card.Content>
-                        <Card.Title title="Recomentações" />
-                        <Text style={style.cardText}>
-                          {`Atividade física supervisionada.\n`}
-                        </Text>
-                        <Text style={style.cardText}>
-                          {`Praticar auto cuidado, como meditação e ioga.\n`}
-                        </Text>
-                        <Text style={style.cardText}>
-                          {`Alimentação saudável.\n`}
-                        </Text>
-                        <Text style={style.cardText}>
-                          {`Conviver com pessoas que lhe transmitam paz e felicidade.\n`}
-                        </Text>
-                        <Text style={style.cardText}>
-                          {`Contato com a natureza.\n`}
-                        </Text>
-                        <Text style={style.cardText}>
-                          {`Se necessário, realizar psicoterapia.\n`}
-                        </Text>
-                      </Card.Content>
-                    </Card>
-                  </View>
-                )}
-
-                <View style={style.button}>
-                  <Button
-                    style={{ marginEnd: 10 }}
-                    buttonColor="#fbc02d"
-                    mode="contained"
-                    onPress={() => ligar()}
-                  >
-                    Ligar para o CVV
-                  </Button>
-                  <Button
-                    buttonColor="#fbc02d"
-                    mode="contained"
-                    rippleColor="white"
-                    onPress={() => navigation.navigate("Home")}
-                  >
-                    Finalizar
-                  </Button>
-                  {/* {answer >= 6 && (
-                    <Button
-                      style={{ marginStart: 5 }}
-                      buttonColor="#fbc02d"
-                      rippleColor="white"
-                      mode="contained"
-                      onPress={() => navigation.navigate("PartOne")}
-                    >
-                      Avançar
-                    </Button>
-                  )} */}
-                </View>
+                {renderMessage()}
+                {renderButtons()}
               </View>
             </PaperProvider>
           </ScrollView>
