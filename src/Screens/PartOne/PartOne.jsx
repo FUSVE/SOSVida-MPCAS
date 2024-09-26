@@ -49,18 +49,18 @@ export default function PartOne({ navigation, route }) {
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho um desejo de viver que é de moderado a forte
+                      Tenho um desejo de viver que é de moderado a forte.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho um desejo fraco de viver
+                      Tenho um desejo fraco de viver.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
-                    <Text style={style.text}>Não tenho desejo de viver</Text>
+                    <Text style={style.text}>Não tenho desejo de viver.</Text>
                   </View>
                   {valor !== undefined && (
                     <View
@@ -89,18 +89,18 @@ export default function PartOne({ navigation, route }) {
                 >
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
-                    <Text style={style.text}>Não tenho desejo de morrer</Text>
+                    <Text style={style.text}>Não tenho desejo de morrer.</Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho um desejo fraco de morrer
+                      Tenho um desejo fraco de morrer.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho um desejo de morrer que é de moderado a forte
+                      Tenho um desejo de morrer que é de moderado a forte.
                     </Text>
                   </View>
                   {valor2 !== undefined && (
@@ -131,22 +131,22 @@ export default function PartOne({ navigation, route }) {
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
-                      Minas razões para viveer pesam mais que minhas razões para
-                      morrer
+                      Minhas razões para viver pesam mais que minhas razões para
+                      morrer.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
                       Minhas razões para viver ou morrer são aproximadamente
-                      iguias
+                      iguais.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
                       Minhas razões para morrer pesam mais que minhas razões
-                      para viver
+                      para viver.
                     </Text>
                   </View>
                   {valor3 !== undefined && (
@@ -176,18 +176,18 @@ export default function PartOne({ navigation, route }) {
                 >
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
-                    <Text style={style.text}>Não tenho desejo de me matar</Text>
+                    <Text style={style.text}>Não tenho desejo de me matar.</Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho um desejo fraco de me matar
+                      Tenho um desejo fraco de me matar.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho um desejo de me matar que é de moderado a forte
+                      Tenho um desejo de me matar que é de moderado a forte.
                     </Text>
                   </View>
                   {valor4 !== undefined && (
@@ -219,21 +219,21 @@ export default function PartOne({ navigation, route }) {
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
                       Se estivesse numa situação de risco de vida, tentaria me
-                      salvar
+                      salvar.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text} numberOfLines={2}>
                       Se estivesse numa situação de risco de vida, deixaria vida
-                      ou morte ao acaso
+                      ou morte ao acaso.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
                       Se estivesse numa situação de risco de vida, não tomaria
-                      as medidas necessários para evitar a morte
+                      as medidas necessárias para evitar a morte.
                     </Text>
                   </View>
                   {valor5 !== undefined && (

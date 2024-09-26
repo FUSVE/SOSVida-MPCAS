@@ -26,6 +26,7 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: StatusBar.currentHeight,
+    paddingBottom:StatusBar.currentHeight,
   },
   title: {
     fontSize: 25,

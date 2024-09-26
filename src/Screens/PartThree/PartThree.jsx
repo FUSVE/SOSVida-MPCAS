@@ -69,7 +69,7 @@ export default function PartThree({ navigation, route }) {
                     >
                       <RadioButtonPaper value={2} color="#fbc02d" />
                       <Text style={style.text}>
-                        Tentei suicídio duas ou mais vezes
+                        Tentei suicídio duas ou mais vezes.
                       </Text>
                     </View>
                     {valor !== undefined && (
@@ -101,7 +101,7 @@ export default function PartThree({ navigation, route }) {
                       <RadioButtonPaper value={0} color="#fbc02d" />
                       <Text style={style.text}>
                         Durante a última tentativa de suicídio, meu desejo de
-                        morrer era fraco
+                        morrer era fraco.
                       </Text>
                     </View>
                     <View
@@ -109,7 +109,7 @@ export default function PartThree({ navigation, route }) {
                     >
                       <RadioButtonPaper value={1} color="#fbc02d" />
                       <Text style={style.text}>
-                        Tenho um desejo fraco de morrer
+                        Tenho um desejo fraco de morrer.
                       </Text>
                     </View>
                     <View
@@ -117,7 +117,7 @@ export default function PartThree({ navigation, route }) {
                     >
                       <RadioButtonPaper value={2} color="#fbc02d" />
                       <Text style={style.text}>
-                        Tenho um desejo de morrer que é de moderado a forte
+                        Tenho um desejo de morrer que é de moderado a forte.
                       </Text>
                     </View>
                     {valor2 !== undefined && (
