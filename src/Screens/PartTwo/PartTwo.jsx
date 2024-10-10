@@ -411,7 +411,7 @@ export default function PartTwo({ navigation, route }) {
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      O método que usuário para cometer suicídio leva tempo e
+                      O método que usaria para cometer suicídio leva tempo e
                       realmente não tenho um boa oportunidade de usá-lo
                     </Text>
                   </View>
