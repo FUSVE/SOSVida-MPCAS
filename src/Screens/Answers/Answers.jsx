@@ -61,9 +61,14 @@ export default function Answers({ navigation, route }) {
         );
       } else {
         return (
-          <Text style={style.cardText}>
-            Procurar por auxílio de equipe de saúde mental (psiquiatra/psicólogo) o mais breve possível
-          </Text>
+          <Card style={style.card}>
+            <Card.Content>
+              <Card.Title title="Recomendações" />
+              <Text style={style.cardText}>
+                Procurar por auxílio de equipe de saúde mental (psiquiatra/psicólogo) o mais breve possível
+              </Text>
+            </Card.Content>
+          </Card>
         );
       }
     }
