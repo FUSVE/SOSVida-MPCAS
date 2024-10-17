@@ -158,7 +158,7 @@ export default function PartThree({ navigation, route }) {
                         {`Recorrer a rede de suporte, como familiares e amigos para suporte emacional.\n`}
                       </Text>
                       <Text style={style.cardText}>
-                        {`Garantir acesso rápido a serviços de creise como CVV(188).\n`}
+                        {`Garantir acesso rápido a serviços de crise como CVV(188).\n`}
                       </Text>
                       <Text style={style.cardText}>
                         {`Buscar atentimento em unidade de saúde de forma imediata.\n`}

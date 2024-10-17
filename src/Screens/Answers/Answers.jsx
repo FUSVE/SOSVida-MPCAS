@@ -37,7 +37,7 @@ export default function Answers({ navigation, route }) {
 
   const renderMessage = () => {
     if (userType === USER_TYPE_ENUM.USER_COMUM) {
-      if (answer <= 9) {
+      if (answer <= 10) {
         return (
           <Card style={style.card}>
             <Card.Content>
@@ -74,7 +74,7 @@ export default function Answers({ navigation, route }) {
     }
 
     if (userType === USER_TYPE_ENUM.USER_NAO_PRESCRITOR) {
-      if (answer <= 9) {
+      if (answer <= 10) {
         return (
           <Card style={style.card}>
             <Card.Content>
