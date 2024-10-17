@@ -98,7 +98,7 @@ export default function PartTwo({ navigation, route }) {
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho períodos que ideia de me matar que duram algum tempo
+                      Tenho períodos que a ideia de me matar que duram algum tempo
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -314,7 +314,7 @@ export default function PartTwo({ navigation, route }) {
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
                       Minhas razões para cometer suicídio têm em vista
-                      principalmente influenciar os utros, como conseguir me
+                      principalmente influenciar os outros, como conseguir me
                       vingar das pessoas, torna-las mais felizes, fazê-las
                       prestar mais atenção em mim etc
                     </Text>
@@ -331,7 +331,7 @@ export default function PartTwo({ navigation, route }) {
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
                       Minhas razões para querer cometer suicídio se baseiam
-                      preincipalmente numa fuga de meus problemas
+                      principalmente numa fuga de meus problemas
                     </Text>
                   </View>
                   {valor7 !== undefined && (
@@ -411,7 +411,7 @@ export default function PartTwo({ navigation, route }) {
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      O método que usario para cometer suicídio leva tempo e
+                      O método que usaria para cometer suicídio leva tempo e
                       realmente não tenho um boa oportunidade de usá-lo
                     </Text>
                   </View>
@@ -449,20 +449,20 @@ export default function PartTwo({ navigation, route }) {
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
-                      Não tenho coragem ou a capacidade para cometer suicídio
+                      Não tenho coragem ou a capacidade para cometer suicídio.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      Não estou certi se tenho coragem ou a capacidade para
-                      cometer suicídio
+                      Não estou certo se tenho coragem ou a capacidade para
+                      cometer suicídio.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho a coragem e a capacidade para cometer suicídio
+                      Tenho a coragem e a capacidade para cometer suicídio.
                     </Text>
                   </View>
                   {valor10 !== undefined && (
@@ -492,19 +492,19 @@ export default function PartTwo({ navigation, route }) {
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
-                      Não espero fazer uma tentativa de suicídio
+                      Não espero fazer uma tentativa de suicídio.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      Não estou certo de que farei uma tentativa de suicídio
+                      Não estou certo de que farei uma tentativa de suicídio.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
-                      Estou certo de que farei uma tentativa de suicídio
+                      Estou certo de que farei uma tentativa de suicídio.
                     </Text>
                   </View>
                   {valor11 !== undefined && (
@@ -534,20 +534,20 @@ export default function PartTwo({ navigation, route }) {
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
-                      Eu não fiz preparativos para cometer suicídio
+                      Eu não fiz preparativos para cometer suicídio.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho feito alguns preparativos para cometer suicídio
+                      Tenho feito alguns preparativos para cometer suicídio.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
                       Meus preparativos para cometer suicídio já estão quase
-                      prontos ou completos
+                      prontos ou completos.
                     </Text>
                   </View>
                   {valor12 !== undefined && (
@@ -577,20 +577,20 @@ export default function PartTwo({ navigation, route }) {
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
-                      Não escrevi um bilhete suicida
+                      Não escrevi um bilhete suicida.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
                       Tenho pensado em escrever um bilhete suicida ou comecei a
-                      escrever, mas não terminei
+                      escrever, mas não terminei.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho um bilhete suicida pronto
+                      Tenho um bilhete suicida pronto.
                     </Text>
                   </View>
                   {valor13 !== undefined && (
@@ -621,21 +621,21 @@ export default function PartTwo({ navigation, route }) {
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
                       Não tomei providências em relação ao que acontecerá depois
-                      que eu tiver cometido suicídio
+                      que eu tiver cometido suicídio.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
                       Tenho pensado em tomar algumas providências em relação ao
-                      que acontecerá depois que eu tiver cometido suicídio
+                      que acontecerá depois que eu tiver cometido suicídio.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
                       Tomei providências definidas em relação ao que acontecerá
-                      depois que eu tiver cometido suicídio
+                      depois que eu tiver cometido suicídio.
                     </Text>
                   </View>
                   {valor14 !== undefined && (
@@ -665,13 +665,13 @@ export default function PartTwo({ navigation, route }) {
                   <View style={style.view}>
                     <RadioButtonPaper value={0} color="#fbc02d" />
                     <Text style={style.text}>
-                      Não tenho escondido das pessoas o meu desejo de me matar
+                      Não tenho escondido das pessoas o meu desejo de me matar.
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <RadioButtonPaper value={1} color="#fbc02d" />
                     <Text style={style.text}>
-                      Tenho evitado contar as pessoas sobre a vontade de me
+                      Tenho evitado contar as pessoas sobre a vontade de me.
                       matar
                     </Text>
                   </View>
@@ -679,7 +679,7 @@ export default function PartTwo({ navigation, route }) {
                     <RadioButtonPaper value={2} color="#fbc02d" />
                     <Text style={style.text}>
                       Tenho tentado não revelar, esconder ou mentir sobre a
-                      vontade cometer suicídio
+                      vontade cometer suicídio.
                     </Text>
                   </View>
                   {valor15 !== undefined && (

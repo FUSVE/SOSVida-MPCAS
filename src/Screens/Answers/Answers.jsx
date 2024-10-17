@@ -37,7 +37,7 @@ export default function Answers({ navigation, route }) {
 
   const renderMessage = () => {
     if (userType === USER_TYPE_ENUM.USER_COMUM) {
-      if (answer <= 9) {
+      if (answer <= 10) {
         return (
           <Card style={style.card}>
             <Card.Content>
@@ -61,15 +61,20 @@ export default function Answers({ navigation, route }) {
         );
       } else {
         return (
-          <Text style={style.cardText}>
-            Procurar por auxílio de equipe de saúde mental (psiquiatra/psicólogo) o mais breve possível
-          </Text>
+          <Card style={style.card}>
+            <Card.Content>
+              <Card.Title title="Recomendações" />
+              <Text style={style.cardText}>
+                Procurar por auxílio de equipe de saúde mental (psiquiatra/psicólogo) o mais breve possível
+              </Text>
+            </Card.Content>
+          </Card>
         );
       }
     }
 
     if (userType === USER_TYPE_ENUM.USER_NAO_PRESCRITOR) {
-      if (answer <= 9) {
+      if (answer <= 10) {
         return (
           <Card style={style.card}>
             <Card.Content>
